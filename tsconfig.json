@@ -24,7 +24,7 @@
     ],
     "paths": {
       // featured
-
+      "@auth/*": ["src/features/auth/*"],
 
       // shared
       "@globals/*": ["src/shared/globals/*"],
