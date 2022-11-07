@@ -1,4 +1,4 @@
-import cloudinary, {UploadApiErrorResponse, UploadApiResponse} from 'cloudinary';
+import cloudinary, { UploadApiErrorResponse, UploadApiResponse } from 'cloudinary';
 
 export const uploads = (
   file: string,
@@ -15,7 +15,7 @@ export const uploads = (
         invalidate
       },
       (error: UploadApiErrorResponse | undefined, result: UploadApiResponse | undefined) => {
-        if(error) resolve(error);
+        if (error) resolve(error);
         resolve(result);
       }
     );
